@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // setting slide
-  currentSlide = "11";
+  currentSlide = "011";
   localStorage.setItem("current-slide", currentSlide);
   disableSwipe = false;
 
@@ -8,10 +8,10 @@ $(document).ready(function () {
   var el = document.getElementById("container");
   swipedetect(el, function (swipedir) {
     if (swipedir == "left") {
-      window.goToSlide("12");
+      window.goToSlide("012");
     }
     if (swipedir == "right") {
-      window.goToSlide("10");
+      window.goToSlide("010");
     }
   });
 
