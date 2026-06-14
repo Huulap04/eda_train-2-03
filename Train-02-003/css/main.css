@@ -1,0 +1,172 @@
+.logo-crux {
+    background: url(../images/Logo.png) no-repeat center top / 100% auto;
+    width: 14vw;
+    height: 12.3vh;
+    left: 0;
+    right: 3px;
+    top: 1.8vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ghost {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    z-index: 10;
+    position: absolute;
+    background: url(../thumb003.png) no-repeat center center / contain;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg003.png) no-repeat center center / cover;
+}
+
+.main-content {
+    width: 100vw;
+    height: 75vh;
+    top: 13vh;
+    left: 0;
+}
+
+.main-title {
+    color: #1e6c46;
+    font-family: 'clear-sans-bold', sans-serif;
+    font-weight: 700;
+    font-size: 2.74vw;
+    letter-spacing: 0%;
+    top: 5.9vh;
+    left: 9.77vw;
+    display: block;
+}
+
+.ingredient-wrapper {
+    top: 12.9vh;
+    left: 9.77vw;
+    width: 53.72vw;
+}
+
+.ingredient-heading {
+    font-family: 'clear-sans-bold', sans-serif;
+    font-weight: 700;
+    font-size: 1.464vw;
+    color: #333333;
+    display: block;
+    margin-bottom: 0.52vh;
+}
+
+.ingredient-subheading {
+    font-family: 'clear-sans-regular', sans-serif;
+    font-weight: 300;
+    font-size: 1.1328vw;
+    color: #333333;
+    display: block;
+    margin-bottom: -0.2604vh;
+}
+
+.ingredient-list {
+    position: relative;
+    width: 100%;
+}
+
+
+.ingredient-item {
+    position: relative;
+    width: 100%;
+    height: 3.13vh;
+    margin-bottom: -1.32vh;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ingredient-name {
+    font-family: 'clear-sans-regular', sans-serif;
+    font-weight: 300;
+    font-size: 1.38vw;
+    letter-spacing: -0.11vw;
+    color: #333333;
+    padding-right: 0.49vw;
+    position: relative;
+    z-index: 2;
+}
+
+
+.ingredient-value {
+    font-family: 'clear-sans-regular', sans-serif;
+    font-weight: 300;
+    font-size: 1.37vw;
+    color: #333333;
+    padding-left: 0.49vw;
+    position: absolute;
+    right: 10.2539vw;
+    z-index: 2;
+}
+
+.ingredient-value-special {
+    font-family: 'clear-sans-regular', sans-serif;
+    font-weight: 300;
+    font-size: 1.38vw;
+    color: #333333;
+    padding-left: 0.49vw;
+    position: absolute;
+    left: 37.9882vw;
+    z-index: 2;
+    width: 14vw;
+    text-align: right;
+}
+
+.product-showcase {
+    top: 36.46vh;
+    left: 4.89vw;
+    width: 31.25vw;
+    height: 39.07vh;
+
+}
+
+.product-box {
+    width: 16.61vw;
+    height: 36.46vh;
+    top: 2.61vh;
+    left: 0;
+    background: url(../images/product_box.png) no-repeat center center / contain;
+    z-index: 3;
+}
+
+.product-bottle {
+    width: 14.65vw;
+    /* ~150px */
+    height: 32.56vh;
+    /* ~250px */
+    top: 6.52vh;
+    left: 15.63vw;
+    background: url(../images/product_bottle.png) no-repeat center center / contain;
+    z-index: 4;
+}
+
+.price-container {
+    top: 63.1vh;
+    left: 34vw;
+    width: 63.95vw;
+}
+
+
+.price-text-main {
+    font-family: 'clear-sans-bold', sans-serif;
+    font-weight: 700;
+    font-size: 1.96vw;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0.13vh;
+    letter-spacing: -0.12vw;
+}
+
+.price-text-sub {
+    font-family: 'clear-sans-bold', sans-serif;
+    font-weight: 400;
+    font-size: 1.47vw;
+    color: #f0f0f0;
+    display: block;
+    letter-spacing: 0.12vw;
+}
