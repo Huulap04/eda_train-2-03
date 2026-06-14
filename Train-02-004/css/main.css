@@ -9,14 +9,14 @@
     margin-right: auto;
 }
 
-.ghost {
+/* .ghost {
     width: 100vw;
     height: 100vh;
     opacity: 0.5;
     z-index: 10;
     position: absolute;
     background: url(../thumb004.png) no-repeat center center / contain;
-}
+} */
 
 .bg {
     width: 100vw;
@@ -168,28 +168,28 @@
 }
 
 .content-title {
-    font-family: "clear-sans-bold";
+    font-family: "avenir";
     font-weight: normal;
     color: #2a2a2a;
     margin-bottom: 0.3vh;
 }
 
 .content-title-1 {
-    font-family: "clear-sans-bold";
+    font-family: "clear-sans-regular";
     font-weight: normal;
     color: #2a2a2a;
     margin-bottom: 0.3vh;
 }
 
 .content-title-2 {
-    font-family: "clear-sans-bold";
+    font-family: "clear-sans-regular";
     font-weight: normal;
     color: #2a2a2a;
     margin-bottom: 0.3vh;
 }
 
 .content-title-3 {
-    font-family: "clear-sans-bold";
+    font-family: "clear-sans-regular";
     font-weight: normal;
     color: #2a2a2a;
     margin-bottom: 0.3vh;
@@ -220,6 +220,7 @@
 
 .content-sub-title {
     line-height: 2.2vh;
+    font-family: "clear-sans-regular";
     font-size: 1.324vw;
     top: 0.3vh;
     position: relative;
@@ -228,6 +229,7 @@
 
 .content-sub-title-1 {
     line-height: 2.2vh;
+    font-family: "clear-sans-regular";
     font-size: 1.324vw;
     top: 0.33vh;
     position: relative;
@@ -236,6 +238,7 @@
 
 .content-sub-title-2 {
     line-height: 2.2vh;
+    font-family: "clear-sans-regular";
     font-size: 1.324vw;
     top: -0.09vh;
     position: relative;
@@ -245,6 +248,7 @@
 
 .content-sub-title-3 {
     line-height: 2.2vh;
+    font-family: "clear-sans-regular";
     font-size: 1.324vw;
     top: -0.25vh;
     position: relative;

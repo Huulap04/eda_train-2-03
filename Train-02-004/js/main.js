@@ -8,10 +8,10 @@ $(document).ready(function () {
     var el = document.getElementById("container");
     swipedetect(el, function (swipedir) {
       if (swipedir == "left") {
-        window.goToSlide("002");
+        window.goToSlide("005");
       }
-      if (swipedir == "right") {    
-        disableSwipe = true;
+      if (swipedir == "right") {
+        window.goToSlide("003");
       }
     });
   
