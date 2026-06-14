@@ -8,6 +8,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .ghost {
     width: 100vw;
     height: 100vh;
@@ -15,4 +16,256 @@
     z-index: 10;
     position: absolute;
     background: url(../thumb004.png) no-repeat center center / contain;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg004.png) no-repeat center center / cover;
+}
+
+/* Content Grid Layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    top: 26.85vh;
+    left: 7.3vw;
+    right: 3vw;
+    bottom: 12vh;
+    gap: 1vh 1vw;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.2vw;
+}
+
+.content-block-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.2vw;
+}
+
+.content-block-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.2vw;
+}
+
+.content-block-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.2vw;
+}
+
+.content-icon {
+    flex-shrink: 0;
+    width: 7vw;
+    height: 7vw;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4vh;
+    position: relative;
+    background: url(../images/image_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content-icon-1 {
+    flex-shrink: 0;
+    width: 7vw;
+    height: 7vw;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4vh;
+    position: relative;
+    background: url(../images/image_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content-icon-2 {
+    flex-shrink: 0;
+    width: 6.5vw;
+    height: 6.5vw;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -0.5vh;
+    position: relative;
+    background: url(../images/image_2.png);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 0.4vw;
+}
+
+.content-icon-3 {
+    flex-shrink: 0;
+    width: 7vw;
+    height: 7vw;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -0.6vh;
+    position: relative;
+    background: url(../images/image_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: -0.7vw;
+}
+
+.content-text {
+    flex: 1;
+    color: #3a3a3a;
+    font-size: 1.5vw;
+    line-height: 1.55;
+}
+
+.content-text-1 {
+    flex: 1;
+    color: #3a3a3a;
+    font-size: 1.5vw;
+    line-height: 1.55;
+}
+
+.content-text-2 {
+    flex: 1;
+    color: #3a3a3a;
+    font-size: 1.5vw;
+    line-height: 1.55;
+}
+
+.content-text-3 {
+    flex: 1;
+    color: #3a3a3a;
+    font-size: 1.5vw;
+    line-height: 1.55;
+}
+
+.content-title {
+    font-family: "clear-sans-bold";
+    font-weight: normal;
+    color: #2a2a2a;
+    margin-bottom: 0.3vh;
+}
+
+.content-title-1 {
+    font-family: "clear-sans-bold";
+    font-weight: normal;
+    color: #2a2a2a;
+    margin-bottom: 0.3vh;
+}
+
+.content-title-2 {
+    font-family: "clear-sans-bold";
+    font-weight: normal;
+    color: #2a2a2a;
+    margin-bottom: 0.3vh;
+}
+
+.content-title-3 {
+    font-family: "clear-sans-bold";
+    font-weight: normal;
+    color: #2a2a2a;
+    margin-bottom: 0.3vh;
+}
+
+.title {
+    top: -0.3vh;
+    position: relative;
+}
+
+.title-1 {
+    top: -0.2vh;
+    position: relative;
+    left: -0.7vw;
+}
+
+.title-2 {
+    top: -0.7vh;
+    position: relative;
+    left: 0.6vw;
+}
+
+.title-3 {
+    top: -0.7vh;
+    position: relative;
+    left: -0.7vw;
+}
+
+.content-sub-title {
+    line-height: 2.2vh;
+    font-size: 1.324vw;
+    top: 0.3vh;
+    position: relative;
+    left: 0.3vw;
+}
+
+.content-sub-title-1 {
+    line-height: 2.2vh;
+    font-size: 1.324vw;
+    top: 0.33vh;
+    position: relative;
+    left: -0.7vw;
+}
+
+.content-sub-title-2 {
+    line-height: 2.2vh;
+    font-size: 1.324vw;
+    top: -0.09vh;
+    position: relative;
+    left: 0.6vw;
+    letter-spacing: 0.008vw;
+}
+
+.content-sub-title-3 {
+    line-height: 2.2vh;
+    font-size: 1.324vw;
+    top: -0.25vh;
+    position: relative;
+    left: -0.72vw;
+    letter-spacing: -0.004vw;
+}
+
+.disadvantage-title {
+    margin-top: 1vh;
+    letter-spacing: 0.08vw;
+}
+
+.disadvantage-content {
+    position: relative;
+    top: -0.5vh;
+}
+
+.indent {
+    padding-left: 2.5vw;
+}
+
+.indent-2 {
+    padding-left: 3vw;
 }
