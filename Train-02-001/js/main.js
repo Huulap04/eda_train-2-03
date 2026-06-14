@@ -10,9 +10,9 @@ $(document).ready(function () {
       if (swipedir == "left") {
         window.goToSlide("002");
       }
-      if (swipedir == "right") {    
-        disableSwipe = true;
-      }
+      // if (swipedir == "right") {    
+      //   disableSwipe = true;
+      // }
     });
   
     // animation here
