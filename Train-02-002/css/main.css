@@ -1,4 +1,3 @@
-/* --- Main Content Wrapper --- */
 .content-wrapper {
     width: 100vw;
     height: 75vh;
@@ -6,23 +5,25 @@
     left: 0;
 }
 
-/* --- Shared Typography & UI Styles --- */
 .section-title {
     color: #216d48;
     font-weight: 700;
-    font-size: 2.2vw;
+    font-size: 1.7vw;
     display: block;
+    font-family: 'clear-sans-regular', sans-serif;
+    letter-spacing: 0.0388vw;
 }
 
 .section-subtitle {
     color: #666666;
     font-size: 1.4vw;
     display: block;
-    margin-bottom: 0.5vh;
+    margin-bottom: 0.1vh;
+    font-family: 'clear-sans-regular', sans-serif;
 }
 
 .list-wrapper {
-    width: 100%;
+    width: 56%;
     top: 4vh;
     left: 0;
 }
@@ -32,7 +33,9 @@
     font-size: 1.4vw;
     line-height: 1.3;
     display: block;
-    margin-bottom: 0.8vh;
+    margin-bottom: -0.52vh;
+    letter-spacing: -1px;
+    font-family: 'clear-sans-regular', sans-serif;
 }
 
 .info-image {
@@ -42,17 +45,13 @@
     border: 2px solid #216d48;
 }
 
-/* ==========================================================================
-   SECTION POSITIONING (ZIG-ZAG LAYOUT)
-   ========================================================================== */
-
-/* --- SECTION 1 --- */
 .section-1 {
     top: 0vh;
     left: 17vw;
     width: 70vw;
     height: 16vh;
 }
+
 .image-1 {
     width: 16.6992vw;
     height: 22.4vh;
@@ -60,19 +59,20 @@
     left: 0.683vw;
     background-image: url(../images/image_1.png);
 }
+
 .container-1 {
-    left: 19vw;
-    top: 1vh;
+    left: 20vw;
+    top: -0.9vh;
     width: 50vw;
 }
 
-/* --- SECTION 2 --- */
 .section-2 {
     top: 18vh;
     left: 31vw;
     width: 60vw;
     height: 16vh;
 }
+
 .image-2 {
     width: 16.6992vw;
     height: 22.4vh;
@@ -80,19 +80,20 @@
     left: 1.1718vw;
     background-image: url(../images/image_2.png);
 }
+
 .container-2 {
-    left: 19vw;
-    top: 1vh;
+    left: 21.4vw;
+    top: 2vh;
     width: 40vw;
 }
 
-/* --- SECTION 3 --- */
 .section-3 {
     top: 36vh;
     left: 19.5vw;
     width: 65vw;
     height: 16vh;
 }
+
 .image-3 {
     width: 16.6992vw;
     height: 22.4vh;
@@ -100,19 +101,20 @@
     left: 0.878vw;
     background-image: url(../images/image_3.png);
 }
+
 .container-3 {
-    left: 19vw;
-    top: 1vh;
+    left: 21vw;
+    top: 7vh;
     width: 45vw;
 }
 
-/* --- SECTION 4 --- */
 .section-4 {
     top: 54vh;
     left: 29.5vw;
     width: 65vw;
     height: 19vh;
 }
+
 .image-4 {
     width: 16.6992vw;
     height: 22.4vh;
@@ -120,21 +122,34 @@
     left: 0.8789vw;
     background-image: url(../images/image_4.png);
 }
+
 .container-4 {
-    left: 19vw;
-    top: 0.5vh;
+    left: 21.2vw;
+    top: 4.6vh;
     width: 45vw;
 }
 
-/* Specific adjustment for section 4 list wrapper due to subtitle */
 .container-4 .list-wrapper {
-    top: 6.5vh;
+    top: 4.5vh;
+    letter-spacing: -1.1px;
+    line-height: 0.8;
 }
-.ghost {
+
+/* .ghost {
     width: 100vw;
     height: 100vh;
     opacity: 0.5;
     z-index: 10;
     position: absolute;
     background: url(../thumb002.png) no-repeat center center / contain;
+} */
+.logo-crux {
+    background: url(../images/Logo.png) no-repeat center top / 100% auto;
+    width: 14vw;
+    height: 12.3vh;
+    left: 0;
+    right: 3px;
+    top: 1.8vh;
+    margin-left: auto;
+    margin-right: auto;
 }
