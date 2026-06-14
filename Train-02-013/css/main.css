@@ -1,0 +1,107 @@
+/* .ghost {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    z-index: 10;
+    position: absolute;
+    background: url(../thumb13.png) no-repeat center center / contain;
+} */
+
+.background {
+
+    width: 173vw;
+    height: 116vh;
+    background: url(../images/background13.png) no-repeat center center / cover;
+    right: -69.7vw;
+    bottom: -2vh;
+
+}
+
+.bg-box {
+    width: 34.9vw;
+    height: 36.6vh;
+    background-image: url(../images/bg-box.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    right: 55.2vw;
+    bottom: 13.2vh;
+    ;
+    z-index: 0;
+}
+
+.title {
+    font-family: 'Avenir';
+    font-size: 2.9vw;
+    font-weight: bold;
+    white-space: nowrap;
+    left: 16.6vw;
+    top: 53.4vh;
+    color: #040606;
+    line-height: 4.8vh;
+    letter-spacing: -0.09vw;
+}
+
+.subtitle-top {
+    font-family: 'clear-sans-regular', sans-serif;
+    font-size: 1.32vw;
+    line-height: 2.2vh;
+    left: 16.5vw;
+    top: 66.2vh;
+    text-align: justify;
+    width: 22vw;
+    letter-spacing: 0.01vw;
+    word-spacing: 0vw;
+}
+
+
+.text-bt-next {
+    font-family: 'Avenir';
+    font-size: 1.1vw;
+    font-weight: bold;
+    left: 36.35vw;
+    top: 82.2vh;
+    letter-spacing: 0.01vw;
+    color: #040606;
+
+
+}
+
+
+.bt-image {
+    width: 7.6vw;
+    height: 31vh;
+    background: url(../images/bg-bt-next.png) no-repeat center center / contain;
+    right: 58.3vw;
+    top: 67.5vh;
+
+}
+
+
+/* .footer-tab {
+    display: flex;
+    padding: -0.4vw;
+    line-height: 1.8vw;
+    z-index: 2;
+    border-radius: 0.8vw;
+    letter-spacing: -0.01vw;
+    height: 4.8vh;
+    width: 95.2vw;
+    letter-spacing: -0.0vw;
+} */
+
+.title,
+.subtitle-box,
+.text-bt-next,
+.bt-image {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.title.show,
+.subtitle-box.show,
+.text-bt-next.show,
+.bt-image.show {
+    opacity: 1;
+
+}
