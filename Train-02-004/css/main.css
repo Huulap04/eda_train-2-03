@@ -1,0 +1,18 @@
+.logo-crux {
+    background: url(../images/Logo.png) no-repeat center top / 100% auto;
+    width: 14vw;
+    height: 12.3vh;
+    left: 0;
+    right: 3px;
+    top: 1.8vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ghost {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    z-index: 10;
+    position: absolute;
+    background: url(../thumb004.png) no-repeat center center / contain;
+}
