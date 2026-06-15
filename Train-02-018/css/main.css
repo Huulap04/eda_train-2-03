@@ -196,22 +196,12 @@
     cursor: pointer;
 }
 
-/* ==========================================
-   HIỆU ỨNG ANIMATION CHO BIỂU ĐỒ DÂY
-   ========================================== */
-
-/* --- BƯỚC 1: TRẠNG THÁI ẨN BAN ĐẦU (KHI CHƯA CÓ CLASS .animate) --- */
-
-/* Ẩn dây (Sử dụng kỹ thuật Stroke-dash ảo) */
-/* --- BƯỚC 1: TRẠNG THÁI ẨN BAN ĐẦU --- */
-
-/* Dùng mặt nạ che 100% sợi dây từ bên phải qua (Xóa bỏ stroke-dash cũ) */
+/* animation */
 .line-chart-container polyline {
     -webkit-clip-path: inset(0 100% 0 0);
     clip-path: inset(0 100% 0 0); 
 }
 
-/* Ẩn các điểm mốc (dots), chữ chú thích và nút vàng (GIỮ NGUYÊN) */
 .line-chart-container rect,
 .line-chart-container .legend-text,
 .line-chart-container .chart-btn {
@@ -219,18 +209,14 @@
     transform: translateY(2vh); 
 }
 
-/* --- BƯỚC 2: TRẠNG THÁI KÍCH HOẠT HIỆU ỨNG --- */
 
-/* 1. Hiệu ứng "Kéo rèm" để vẽ dây từ trái sang phải mượt mà */
 .line-chart-container.animate polyline {
     -webkit-clip-path: inset(0 0 0 0);
     clip-path: inset(0 0 0 0);
     transition: -webkit-clip-path 2s ease-in-out, clip-path 2s ease-in-out;
 }
 
-/* (Các hiệu ứng bên dưới của rect, .legend-text, .chart-btn bạn VẪN GIỮ NGUYÊN như code cũ nhé) */
 
-/* 2. Hiệu ứng hiện các điểm mốc vuông (Chờ vẽ dây 1.8s rồi mới hiện) */
 .line-chart-container.animate rect {
     opacity: 1;
     transform: translateY(0);
@@ -238,18 +224,16 @@
     transition-delay: 1.8s; 
 }
 
-/* 3. Hiệu ứng trượt lên cho Chú thích (Legend) */
 .line-chart-container.animate .legend-text {
     opacity: 1;
-    transform: translateY(0); /* Trượt về vị trí ban đầu */
+    transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
-    transition-delay: 2.1s; /* Chờ các điểm mốc hiện xong */
+    transition-delay: 2.1s;
 }
 
-/* 4. Hiệu ứng trượt lên cho Nút bấm vàng */
 .line-chart-container.animate .chart-btn {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
-    transition-delay: 2.4s; /* Hiện cuối cùng */
+    transition-delay: 2.4s;
 }
