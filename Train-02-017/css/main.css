@@ -23,13 +23,11 @@
         #49c57d 63% 81%,     
         #b8222b 81% 100%     
     );
-    /* THÊM ANIMATION: Ẩn và xoay nhẹ (không dùng scale để chống lỗi) */
     opacity: 0;
     transform: rotate(-90deg);
     transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 1s ease;
 }
 
-/* Kích hoạt Pie Chart */
 .pie-chart.animate {
     opacity: 1;
     transform: rotate(0deg);
@@ -41,17 +39,13 @@
     font-family: "Clear Sans", Arial, sans-serif;
     font-size: 2.7vh; 
     font-weight: 500;
-    transform: translate(-50%, -50%); /* Giữ nguyên lệnh căn giữa gốc */
-    
-    /* THÊM ANIMATION: Ẩn chữ ban đầu */
+    transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.5s ease;
 }
-
-/* Kích hoạt Text trên biểu đồ */
 .slice-text.animate {
     opacity: 1;
-    transition-delay: 0.8s; /* Chờ biểu đồ quay gần xong mới hiện số */
+    transition-delay: 0.8s;
 }
 
 .text-46 { left: 76.5%; top: 44.8%; }
@@ -64,8 +58,6 @@
     width: 3.91vw;
     height: 4.17vh;
     left: 63.68vw;
-    
-    /* THÊM ANIMATION: Ẩn và lệch xuống dưới 1 chút */
     opacity: 0;
     transform: translateY(1.5vh);
     transition: all 0.6s ease;
@@ -92,8 +84,6 @@
     font-weight: 700;
     color: #333333;
     white-space: nowrap;
-    
-    /* THÊM ANIMATION: Ẩn và lệch xuống dưới */
     opacity: 0;
     transform: translateY(1.5vh);
     transition: all 0.6s ease;
@@ -104,7 +94,6 @@
 .leg-3 .leg-text { top: 47.42vh; }
 .leg-4 .leg-text { top: 53.68vh; }
 
-/* Kích hoạt Legend Box và Text cùng lúc */
 .leg-1.animate .leg-box, .leg-1.animate .leg-text { opacity: 1; transform: translateY(0); transition-delay: 0.8s; }
 .leg-2.animate .leg-box, .leg-2.animate .leg-text { opacity: 1; transform: translateY(0); transition-delay: 1.0s; }
 .leg-3.animate .leg-box, .leg-3.animate .leg-text { opacity: 1; transform: translateY(0); transition-delay: 1.2s; }
@@ -114,7 +103,6 @@
     position: absolute;
     top: 76.8vh;
     left: 50.3%;
-    /* Sửa nhẹ transform X gốc bằng cách ghép thêm transform Y để làm hiệu ứng */
     transform: translateX(-50%) translateY(2vh); 
     width: fit-content;
     padding: 0.2vh 1.9vw;
@@ -128,14 +116,13 @@
     box-sizing: border-box;
     cursor: pointer;
     
-    /* THÊM ANIMATION: Ẩn nút ban đầu */
+
     opacity: 0;
     transition: all 0.8s ease;
 }
 
-/* Kích hoạt Nút bấm */
 .nutri-btn.animate {
     opacity: 1;
-    transform: translateX(-50%) translateY(0); /* Trả về đúng vị trí căn giữa X như ban đầu của bạn */
+    transform: translateX(-50%) translateY(0);
     transition-delay: 1.6s;
 }

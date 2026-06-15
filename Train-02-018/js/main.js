@@ -17,7 +17,7 @@ $(document).ready(function () {
   
     // animation here
     setTimeout(() => {
-      $(".line-chart-container").addClass("animate"); //this line only for example
+      $(".line-chart-container").addClass("animate");
     }, 500);
   });
   
