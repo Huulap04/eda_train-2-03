@@ -32,6 +32,7 @@
 }
 
 .main-title {
+    /* position: absolute; */
     color: #1e6c46;
     font-family: 'clear-sans-bold', sans-serif;
     font-weight: 700;
@@ -169,4 +170,25 @@
     color: #f0f0f0;
     display: block;
     letter-spacing: 0.12vw;
+}
+.main-title,
+.ingredient-wrapper,
+.ingredient-heading,
+.ingredient-subheading,
+.ingredient-list,
+.ingredient-value,
+.ingredient-value-special,
+.price-container {
+     opacity: 0;
+    transition: all 0.5s ease;
+}
+.main-title.show,
+.ingredient-wrapper.show,
+.ingredient-heading.show,
+.ingredient-subheading.show,
+.ingredient-list.show,
+.ingredient-value.show,
+.ingredient-value-special.show,
+.price-container.show {
+    opacity: 1;
 }
