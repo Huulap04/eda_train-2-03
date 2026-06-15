@@ -8,7 +8,7 @@ $(document).ready(function () {
     var el = document.getElementById("container");
     swipedetect(el, function (swipedir) {
       if (swipedir == "left") {
-        window.goToSlide("019");
+        disableSwipe = true;
       }
       if (swipedir == "right") {    
          window.goToSlide("017");
