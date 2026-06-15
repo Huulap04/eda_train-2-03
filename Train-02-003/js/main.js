@@ -16,8 +16,14 @@ $(document).ready(function () {
     });
   
     // animation here
-    setTimeout(() => {
-      $(".line").addClass("show"); //this line only for example
-    }, 500);
+   const animations = {
+    300: [".main-title"],
+    500: [".ingredient-wrapper", ".ingredient-heading", ".ingredient-subheading",".ingredient-list",".ingredient-value",".ingredient-value-special"],
+    750: [".price-container"],
+  };
+
+  for (const [offset, elem] of Object.entries(animations)) {
+    setTimeout(() => elem.forEach((e) => $(e).addClass("show")), offset);
+  }
   });
   
