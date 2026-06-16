@@ -84,7 +84,6 @@
     }
 }
 
-/* Note item slide-in animation */
 .note-item {
     opacity: 0;
     transform: translateY(-18px);
