@@ -16,8 +16,19 @@ $(document).ready(function () {
     });
   
     // animation here
-    setTimeout(() => {
-      $(".line").addClass("show"); //this line only for example
-    }, 500);
+  const animations = {
+    300: [".note-title"],
+    500: [".hero-subtitle-box", ".hero-content-box", ".text-title-highlight"],
+  };
+
+  for (const [offset, elem] of Object.entries(animations)) {
+    setTimeout(() => elem.forEach((e) => $(e).addClass("show")), offset);
+  }
+  // Stagger note items from top to bottom
+  setTimeout(function () {
+    $(".note-item").each(function () {
+      $(this).addClass("show");
+    });
+  }, 500);
   });
   
